@@ -1,0 +1,10 @@
+<app-playground [todos]="todos">
+</app-playground>
+
+<app-todo-list [todos]="todos"
+               (onDeleteTodo)="deleteTodo($event)"
+               (onAddTodo)="addTodo($event)"
+               (onDeleteAllCheckedTodo)="deleteAllCheckedTodo()">
+</app-todo-list>
+
+

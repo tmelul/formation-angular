@@ -1,0 +1,15 @@
+<div class="todo-list">
+  <div class="todo-create">
+    <form [formGroup]="form" (ngSubmit)="addTodo()">
+      <input formControlName="title"  placeholder="Enter title">
+      <button type="submit">Add</button>
+    </form>
+  </div>
+
+  <mat-list *ngFor="let todo of todos">
+    <app-todo [todo]="todo" (onDeleteTodo)="deleteTodo($event)"></app-todo>
+  </mat-list>
+
+  <mat-button-toggle type="submit" class="btn btn-default"
+                     (click)="deleteAllCheckedTodo()"> Delete all checked </mat-button-toggle>
+</div>
