@@ -1,0 +1,6 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+  <label>Title</label>
+  <input type="text" formControlName="title"/>
+  <input type="checkbox" formControlName="completed" />
+  <button>OK</button>
+</form>

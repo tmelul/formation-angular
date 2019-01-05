@@ -1,0 +1,5 @@
+<app-todo-form (created)="onCreated($event)"></app-todo-form>
+
+<mat-card>
+	<app-todo-list [todos]="todos" (deleteTodo)="onDelete($event)"></app-todo-list>
+</mat-card>

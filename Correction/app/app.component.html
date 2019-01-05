@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+	<mat-sidenav mode="side" opened>
+		<mat-nav-list role="navigation">
+			<a mat-list-item routerLink="/playground" routerLinkActive="sidenav-item-selected">Playground</a>
+			<a mat-list-item routerLink="/todos" routerLinkActive="sidenav-item-selected">Todos</a>
+		</mat-nav-list>
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<router-outlet></router-outlet>
+	</mat-sidenav-content>
+</mat-sidenav-container>
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>

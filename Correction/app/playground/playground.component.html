@@ -1,0 +1,14 @@
+<p>Counter: {{counter}}
+	<button (click)="inc()">Add</button>
+</p>
+<p>
+	<input [(ngModel)]="text" type="value" />
+	<button (click)="push()">Push</button>
+</p>
+<p>Valeur: {{text}}</p>
+
+<ul>
+	<li *ngFor="let s of values">{{s}}</li>
+</ul>
+
+<p>Somme: {{sum()}}</p>
